@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+.Todo {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  border: 1px solid #eeeeee;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Todo .Header {
+  padding: 10px 15px;
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.Todo .Header input {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
+
+.Todo .Header input:focus {
+  outline: none;
+}
+
+.Todo .Header img {
+  margin: auto 15px auto 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.TodoItem {
+  color: #4d4d4d;
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.TodoItem > p {
+  margin: 0 0 0 20px;
+  flex-grow: 1;
+}
+
+.TodoItem:last-child {
+  border-bottom: none;
+}
+
+.TodoItem img {
+  margin-left: 10px;
+  margin-top: auto;
+}
+
+.TodoItem img.deleteBtn {
+  margin: auto 20px;
+}
+
+.TodoItem-complete > p {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.Todo .Footer {
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  color: #777;
+}
+
+.Todo .Footer span {
+  margin: 15px 0 15px 15px;
+}
+
+.Todo .Footer .filter {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.Todo .Footer .filter li {
+  margin: 3px;
+  padding: 3px 7px;
+  border-radius: 3px;
+}
+
+.on-active {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}
+
+.Todo .Footer .filter li:hover {
+  border: 1px solid rgba(175, 47, 47, 0.1);
+}
+
+.Todo .Footer a {
+  color: #777;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.Todo .Footer a:hover {
+  text-decoration: underline;
+}
